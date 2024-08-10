@@ -25,9 +25,7 @@ spring:
         default-label: main
 ```
 		
-- Pattern of profile call (http://localhost:<app port>/<app name>/<profile>/<git branch> example:
+- Pattern of profile call (http://localhost:app-port/app-name/profile/git-branch) example:
 ``` 
 http://localhost:8081/paymentservice/dev/main)
-```
-
 ```
