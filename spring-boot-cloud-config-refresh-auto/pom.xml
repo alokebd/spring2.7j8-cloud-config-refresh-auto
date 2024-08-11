@@ -14,6 +14,8 @@
 	<modules>
 		<module>cloud-config-manager</module>
 		<module>paymentService</module>
+		<module>cloud-order-service</module>
+		<module>cloud-user-service</module>
 	</modules>
 
 </project>

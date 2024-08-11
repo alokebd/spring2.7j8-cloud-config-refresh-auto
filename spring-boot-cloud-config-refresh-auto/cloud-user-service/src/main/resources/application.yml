@@ -1,0 +1,11 @@
+server:
+  port: 8083
+#To management endpoints with different configurations.
+management:
+   server:
+     port: 8084
+   endpoints:
+      web:
+        exposure:
+           include: info
+           exclude: health,env,beans

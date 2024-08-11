@@ -20,7 +20,7 @@
 ```spring:
   cloud:
     config:
-      uri: http://localhost:8081
+      uri: http://localhost:8181
         
   application:
     name: paymentservice

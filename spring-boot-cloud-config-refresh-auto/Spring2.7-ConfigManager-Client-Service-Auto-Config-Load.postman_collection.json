@@ -7,17 +7,17 @@
 	},
 	"item": [
 		{
-			"name": "Cloud Config Payment Service DEV",
+			"name": "Cloud Config Manager Payment Dev Config",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/paymentservice/dev/main",
+					"raw": "http://localhost:8181/paymentservice/dev/main",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8181",
 					"path": [
 						"paymentservice",
 						"dev",
@@ -28,17 +28,17 @@
 			"response": []
 		},
 		{
-			"name": "Cloud Config Payment Service QA",
+			"name": "Cloud Cong Manager Payment Service QA config",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/paymentservice/qa/main",
+					"raw": "http://localhost:8181/paymentservice/qa/main",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8081",
+					"port": "8181",
 					"path": [
 						"paymentservice",
 						"qa",
@@ -54,12 +54,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/values",
+					"raw": "http://localhost:8081/values",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"values"
 					]
@@ -73,15 +73,91 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/actuator/refresh",
+					"raw": "http://localhost:8081/actuator/refresh",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "8081",
 					"path": [
 						"actuator",
 						"refresh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QA Order Service (active profile qa)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Service Actuator (all)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/actuator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"actuator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEV User Service (active profile dev)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/values",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Service Actuator (Limited info) separate management  PORT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/actuator",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"actuator"
 					]
 				}
 			},
