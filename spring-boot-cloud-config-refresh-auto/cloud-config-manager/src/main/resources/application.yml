@@ -1,17 +1,20 @@
+server:
+  port: 8181
+  
 spring:
   cloud:
     config:
       server:
         git:
-          #uri: https://github.com/FullStackMania/CloudConfiguration
           uri: https://github.com/alokebd/cloud-configurations
           search-paths:
            - '{application}'
           refresh-rate: 0
         default-label: main
+  application:
+       name: CloudConfigServer
         
-# NOTE: http://localhost:8081/<name>/<profile>/<branch>
+# NOTE: http://localhost:8181/<name>/<profile>/<branch>
 # http://localhost:8081/paymentservice/dev/main
 
-server:
-  port: 8081
+
